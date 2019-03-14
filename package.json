@@ -18,6 +18,9 @@
   "napa": {
     "pierophp-pinyin": "Connum/pinyin"
   },
+  "napa-config": {
+    "cache": false
+  },
   "files": [
     "lib",
     "src"

@@ -7,6 +7,60 @@ describe('Default splitting tests', () => {
     assert.deepEqual(pinyinSeparate('jiānrěnbùbá'), expectedVal);
   });
 
+  it('should split yīèrsānsìwǔliùqībājiǔshí', () => {
+    const expectedVal = ['yī', 'èr', 'sān', 'sì', 'wǔ', 'liù', 'qī', 'bā', 'jiǔ', 'shí'];
+    assert.deepEqual(pinyinSeparate('yīèrsānsìwǔliùqībājiǔshí'), expectedVal);
+  });
+  it('should split Wǒshìdéguórénxuéxízhōngwén', () => {
+    const expectedVal = ['Wǒ', 'shì', 'dé', 'guó', 'rén', 'xué', 'xí', 'zhōng', 'wén'];
+    assert.deepEqual(pinyinSeparate('Wǒshìdéguórénxuéxízhōngwén'), expectedVal);
+  });
+
+  it('should split Zhè shì wǒ de nǚér', () => {
+    const expectedVal = ['Zhè', 'shì', 'wǒ', 'de', 'nǚ', 'ér'];
+    assert.deepEqual(pinyinSeparate('Zhè shì wǒ de nǚér'), expectedVal);
+  });
+
+  it('should split Zhèerlǐ', () => {
+    const expectedVal = ['Zhè', 'er', 'lǐ'];
+    assert.deepEqual(pinyinSeparate('Zhèerlǐ'), expectedVal);
+  });
+
+  it('should split Zhèrlǐ', () => {
+    const expectedVal = ['Zhèr', 'lǐ'];
+    assert.deepEqual(pinyinSeparate('Zhèrlǐ'), expectedVal);
+  });
+
+  it('should split Zhèshìzhèerlǐ', () => {
+    const expectedVal = ['Zhè', 'shì', 'zhè', 'er', 'lǐ'];
+    assert.deepEqual(pinyinSeparate('Zhèshìzhèerlǐ'), expectedVal);
+  });
+
+  it('should split Zhèshì zhèerlǐ', () => {
+    const expectedVal = ['Zhè', 'shì', 'zhè', 'er', 'lǐ'];
+    assert.deepEqual(pinyinSeparate('Zhèshì zhèerlǐ'), expectedVal);
+  });
+
+  it('should split Zhèshìzhèrlǐ', () => {
+    const expectedVal = ['Zhè', 'shì', 'zhèr', 'lǐ'];
+    assert.deepEqual(pinyinSeparate('Zhèshìzhèrlǐ'), expectedVal);
+  });
+
+  it('should split Zhèshì zhèerlǐ', () => {
+    const expectedVal = ['Zhè', 'shì', 'zhèr', 'lǐ'];
+    assert.deepEqual(pinyinSeparate('Zhèshì zhèrlǐ'), expectedVal);
+  });
+
+  it('should split Qièěr', () => {
+    const expectedVal = ['Qiè', 'ěr'];
+    assert.deepEqual(pinyinSeparate('Qièěr'), expectedVal);
+  });
+
+  it('should split nüèjí', () => {
+    const expectedVal = ['nüè', 'jí'];
+    assert.deepEqual(pinyinSeparate('nüèjí'), expectedVal);
+  });
+
   it('should split nĭhăoma using breve instead of háček for 3rd tone', () => {
     const expectedVal = ['nĭ', 'hăo', 'ma'];
     assert.deepEqual(pinyinSeparate('nĭhăoma'), expectedVal);

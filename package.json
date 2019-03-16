@@ -11,7 +11,8 @@
     "test:watch": "npm test -- --watch",
     "test:examples": "node examples/",
     "lint": "eslint src test",
-    "build": "cross-env BABEL_ENV=production babel src --out-dir lib && browserify lib/index.js > dist/pinyin-separate.js --standalone pinyin-separate",
+    "build": "cross-env BABEL_ENV=production babel src --out-dir lib && browserify -p [ browserify-banner --file build/dist-banner.txt ] lib/index.js > dist/pinyin-separate.min.js --standalone pinyin-separate",
+    "prepare": "napa && node build/prepare.js",
     "prepublishOnly": "npm run clean && npm run lint && npm run test && npm run build"
   },
   "napa": {
@@ -48,6 +49,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-minify": "^0.5.0",
+    "browserify-banner": "^1.0.13",
     "chai": "^4.2.0",
     "cross-env": "^5.2.0",
     "eslint": "^5.15.2",

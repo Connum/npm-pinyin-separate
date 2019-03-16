@@ -15,7 +15,7 @@ const pinyinSeparate = require('pinyin-separate').default
 // or
 import pinyinSeparate from 'pinyin-separate'
 // or (for usage in a browser environment)
-<script src="dist/pinyin-separate.js"></script>
+<script src="dist/pinyin-separate.min.js"></script>
 
 // and then it's as simple as
 pinyinSeparate("nĭhăoma"); // result: ['nĭ', 'hăo', 'ma']

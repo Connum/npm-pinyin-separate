@@ -4,7 +4,6 @@
   "description": "Separates a string containing pinyin notation (with diacritics) into an array of pinyin syllables, even if there are no spaces in between.",
   "main": "./lib/index.js",
   "scripts": {
-    "install": "napa",
     "clean": "rimraf lib",
     "test": "npm run lint && npm run test:only",
     "test:prod": "cross-env BABEL_ENV=production npm run test",
@@ -42,9 +41,6 @@
     "url": "https://github.com/Connum/npm-pinyin-separate/issues"
   },
   "homepage": "https://github.com/Connum/npm-pinyin-separate#readme",
-  "dependencies": {
-    "napa": "^3.0.0"
-  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
@@ -61,6 +57,7 @@
     "eslint-plugin-react": "^7.12.4",
     "istanbul": "^1.0.0-alpha",
     "mocha": "^6.0.2",
+    "napa": "^3.0.0",
     "rimraf": "^2.6.3"
   }
 }

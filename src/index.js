@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import separatePinyinInSyllables from 'pierophp-pinyin/shared/helpers/separate-pinyin-in-syllables';
+import separatePinyinInSyllables from './helpers/separate-pinyin-in-syllables';
 
 const defaultOptions = {
   byNbsp: false

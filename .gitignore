@@ -42,3 +42,4 @@ yarn.lock
 
 others
 .DS_Store
+src/helpers/separate-pinyin-in-syllables.js

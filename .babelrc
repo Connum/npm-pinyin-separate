@@ -9,6 +9,9 @@
     "production": {
       "presets": ["env", ["minify", {
         "builtIns": false,
+        "mangle": { "topLevel": true },
+        "regexpConstructors": false,
+        "evaluate": false
       }]],
       "comments": false,
       "plugins": [

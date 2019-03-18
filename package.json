@@ -24,7 +24,7 @@
   },
   "files": [
     "lib",
-    "src"
+    "dist"
   ],
   "repository": {
     "type": "git",

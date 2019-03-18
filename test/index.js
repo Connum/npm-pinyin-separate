@@ -66,6 +66,21 @@ describe('Default splitting tests', () => {
     assert.deepEqual(pinyinSeparate('nĭhăoma'), expectedVal);
   });
 
+  it('should split Wǒhěnhǎoxièxiènǐ\'ne', () => {
+    const expectedVal = ['Wǒ', 'hěn', 'hǎo', 'xiè', 'xiè', 'nǐ', 'ne'];
+    assert.deepEqual(pinyinSeparate("Wǒhěnhǎoxièxiènǐ'ne"), expectedVal);
+  });
+
+  it('should split Xián​\'ān', () => {
+    const expectedVal = ['Xián', 'ān'];
+    assert.deepEqual(pinyinSeparate('Xián\'ān'), expectedVal);
+  });
+
+  it('should split Xiànán', () => {
+    const expectedVal = ['Xià', 'nán'];
+    assert.deepEqual(pinyinSeparate('Xiànán'), expectedVal);
+  });
+
   it('should split jiān rěn bù bá with non-breaking spaces', () => {
     const expectedVal = ['jiān', 'rěn', 'bù', 'bá'];
     const nbsp = String.fromCharCode(160);

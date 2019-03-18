@@ -1,6 +1,6 @@
 {
   "name": "pinyin-separate",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Separates a string containing pinyin notation (with diacritics) into an array of pinyin syllables, even if there are no spaces in between.",
   "main": "./lib/index.js",
   "scripts": {

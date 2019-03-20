@@ -1,4 +1,4 @@
-# NPM pinyin-separate
+# pinyin-separate
 
 [![dependencies Status](https://david-dm.org/Connum/npm-pinyin-separate/status.svg)](https://david-dm.org/Connum/npm-pinyin-separate) [![devDependencies Status](https://david-dm.org/Connum/npm-pinyin-separate/dev-status.svg)](https://david-dm.org/Connum/npm-pinyin-separate?type=dev) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -8,6 +8,8 @@ This is mainly [separate-pinyin-in-syllables.js](https://github.com/pierophp/pin
 
 # Installation
 `npm install pinyin-separate`
+
+or use the files in `/dist` or from the [releases](https://github.com/Connum/npm-pinyin-separate/releases) for direct in-browser usage.
 
 # Usage and examples
 ```js

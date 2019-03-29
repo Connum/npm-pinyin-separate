@@ -1,6 +1,6 @@
 # pinyin-separate
 
-[![dependencies Status](https://david-dm.org/Connum/npm-pinyin-separate/status.svg)](https://david-dm.org/Connum/npm-pinyin-separate) [![devDependencies Status](https://david-dm.org/Connum/npm-pinyin-separate/dev-status.svg)](https://david-dm.org/Connum/npm-pinyin-separate?type=dev) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![dependencies Status](https://david-dm.org/Connum/npm-pinyin-separate/status.svg)](https://david-dm.org/Connum/npm-pinyin-separate) [![devDependencies Status](https://david-dm.org/Connum/npm-pinyin-separate/dev-status.svg)](https://david-dm.org/Connum/npm-pinyin-separate?type=dev) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![npm total downloads](https://img.shields.io/npm/dt/pinyin-separate.svg)](https://www.npmjs.com/package/pinyin-separate)
 
 Separates a string containing pinyin notation (with diacritics) into an array of pinyin syllables, even if there are no spaces in between.
 

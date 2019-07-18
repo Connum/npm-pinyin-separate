@@ -1,5 +1,5 @@
 /*!
- * pinyin-separate v1.0.6 (March 18th 2019)
+ * pinyin-separate v1.0.6 (July 19th 2019)
  * Separates a string containing pinyin notation (with diacritics) into an array of pinyin syllables, even if there are no spaces in between.
  * 
  * https://github.com/Connum/npm-pinyin-separate#readme

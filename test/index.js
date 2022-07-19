@@ -88,4 +88,19 @@ describe('Default splitting tests', () => {
       byNbsp: true
     }), expectedVal);
   });
+
+  it('should split piàoliàng correctly', () => {
+    const expectedVal = ['piào', 'liàng'];
+    assert.deepEqual(pinyinSeparate('piàoliàng'), expectedVal);
+  });
+
+  it('should split cháo xiào correctly', () => {
+    const expectedVal = ['cháo', 'xiào'];
+    assert.deepEqual(pinyinSeparate('cháo xiào'), expectedVal);
+  });
+
+  // it('should split xióngmāohěnkěài', () => {
+  //   const expectedVal = ['xióng', 'māo', 'hěn', 'kě', 'ài'];
+  //   assert.deepEqual(pinyinSeparate('xióngmāohěnkěài'), expectedVal);
+  // });
 });

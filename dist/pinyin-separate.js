@@ -1,5 +1,5 @@
 /*!
- * pinyin-separate v1.0.6 (July 19th 2019)
+ * pinyin-separate v1.0.7 (July 19th 2022)
  * Separates a string containing pinyin notation (with diacritics) into an array of pinyin syllables, even if there are no spaces in between.
  * 
  * https://github.com/Connum/npm-pinyin-separate#readme
@@ -21,6 +21,7 @@ function separate(pinyin) {
   .replace(new RegExp('([' + vowels + ']{2}(ng? )?)([^\\snr])', 'gi'), '$1 $3') // double-vowel finals
   .replace(new RegExp('([' + vowels + ']{2})(n[' + vowels + '])', 'gi'), '$1 $2') // double-vowel followed by n initial
   .replace(new RegExp('(n)([^' + vowels + 'vg])', 'gi'), '$1 $2') // cleans up most n compounds
+  .replace(new RegExp('((ch|pi|xi)[a\u0101\xE1\u01CE\u0103\xE0]) (o)', 'gi'), '$1$3') // fix https://github.com/Connum/npm-pinyin-separate/issues/1
   .replace(new RegExp('([' + vowels + 'v])([^' + vowels + '\\w\\s])([' + vowels + 'v])', 'gi'), '$1 $2$3') // assumes correct Pinyin (i.e., no missing apostrophes)
   .replace(new RegExp('([' + vowels + 'v])(n)(g)([' + vowels + 'v])', 'gi'), '$1$2 $3$4') // assumes correct Pinyin, i.e. changan = chan + gan
   .replace(new RegExp('([gr])([^' + vowels + '])', 'gi'), '$1 $2') // fixes -ng and -r finals not followed by vowels

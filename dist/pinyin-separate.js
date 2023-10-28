@@ -1,5 +1,5 @@
 /*!
- * pinyin-separate v1.1.0 (July 19th 2022)
+ * pinyin-separate v1.1.0 (October 28th 2023)
  * Separates a string containing pinyin notation (with diacritics) into an array of pinyin syllables, even if there are no spaces in between.
  * 
  * https://github.com/Connum/npm-pinyin-separate#readme
@@ -100,6 +100,7 @@ var pinyinSeparate = function pinyinSeparate(pinyIn) {
 
   var options = optionsArg;
   if (options !== defaultOptions) {
+    // eslint-disable-next-line prefer-object-spread
     options = Object.assign({}, defaultOptions, options);
   }
 

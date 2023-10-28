@@ -7,6 +7,7 @@ const defaultOptions = {
 const pinyinSeparate = (pinyIn, optionsArg = defaultOptions) => {
   let options = optionsArg;
   if (options !== defaultOptions) {
+    // eslint-disable-next-line prefer-object-spread
     options = Object.assign({}, defaultOptions, options);
   }
 

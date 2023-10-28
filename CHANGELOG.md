@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.2.0] - 2023-10-28
+
+### Added
+* More tests
+
+### Fixed
+* Updated all dependencies to fix vulnerabilities
+* Removed unnecessary files and dependencies
+
+# Changelog
+
 ## [1.1.0] - 2022-07-19
 
 ### Added

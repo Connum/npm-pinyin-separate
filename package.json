@@ -39,7 +39,7 @@
   "homepage": "https://github.com/Connum/npm-pinyin-separate#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-eslint": "^10.0.2",
+    "@babel/eslint-parser": "^7.22.15",
     "babel-plugin-add-module-exports": "^1.0.4",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
